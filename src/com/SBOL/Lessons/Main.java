@@ -1,4 +1,6 @@
 package com.SBOL.Lessons;
+import com.SBOL.Lessons.Lesson_3.Task_1;
+
 import java.util.Scanner;
 public class Main {
 
@@ -18,7 +20,7 @@ public class Main {
 
             switch (i) {
                 case 1:
-                    System.out.println("Задание 1");
+                    Task_1.menu();
                     break;
                 case 2:
                     System.out.println("Задание 2");
