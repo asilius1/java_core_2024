@@ -1,9 +1,7 @@
 package com.SBOL.Lessons.Lesson_3;
 
-import static com.SBOL.Lessons.Main.readInput;
 
-
-public class Functional {
+public class Functional_1 {
 
     public static void task1() {
         int x;

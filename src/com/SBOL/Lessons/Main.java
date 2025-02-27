@@ -1,5 +1,6 @@
 package com.SBOL.Lessons;
 import com.SBOL.Lessons.Lesson_3.Task_1;
+import com.SBOL.Lessons.Lesson_4.Task_2;
 
 import java.util.Scanner;
 public class Main {
@@ -23,7 +24,7 @@ public class Main {
                     Task_1.menu();
                     break;
                 case 2:
-                    System.out.println("Задание 2");
+                    Task_2.menu();;
                     break;
                 case 3:
                     System.out.println("Задание 3");
@@ -36,6 +37,11 @@ public class Main {
 
     public static int readInput() {
         return str.nextInt();
+
+    }
+
+    public static double readInputDouble() {
+        return str.nextDouble();
 
     }
 }
