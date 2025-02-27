@@ -26,6 +26,12 @@ public class Task_1 {
                 case 2:
                     Functional.task2();
                     break;
+                case 3:
+                    Functional.task3();
+                    break;
+                case 4:
+                    Functional.task4();
+                    break;
                 case 0:
                     break;
             }
