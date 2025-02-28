@@ -1,4 +1,4 @@
-package com.SBOL.Lessons.Lesson_3;
+package com.SBOL.lessons.lesson_3;
 
 
 public class Functional_1 {

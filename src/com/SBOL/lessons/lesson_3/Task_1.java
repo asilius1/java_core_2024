@@ -1,6 +1,6 @@
-package com.SBOL.Lessons.Lesson_3;
+package com.SBOL.lessons.lesson_3;
 
-import static com.SBOL.Lessons.Main.readInput;
+import static com.SBOL.lessons.Main.readInput;
 
 public class Task_1 {
     public static void menu() {

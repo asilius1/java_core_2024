@@ -1,7 +1,7 @@
-package com.SBOL.Lessons.Lesson_4;
+package com.SBOL.lessons.lesson_4;
 
-import static com.SBOL.Lessons.Main.readInput;
-import static com.SBOL.Lessons.Main.readInputDouble;
+import static com.SBOL.lessons.Main.readInput;
+import static com.SBOL.lessons.Main.readInputDouble;
 
 public class Functional_2 {
     public static void task1() {
