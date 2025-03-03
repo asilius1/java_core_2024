@@ -1,7 +1,5 @@
 package com.SBOL.lessons.lesson_6;
 
-import java.lang.reflect.Array;
-
 import static com.SBOL.lessons.Main.readInput;
 import static com.SBOL.lessons.Main.readInputDouble;
 
@@ -28,12 +26,46 @@ public class Functional_4 {
     }
 
     public static void task2() {
+        // Вызываем метод для создания и заполнения массива
+        int[] firstArray = createAndFillArray();
 
+        int[] secondArray = new int[firstArray.length + 1];
+
+        // Копируем значения из первого массива во второй
+        for (int i = 0; i < firstArray.length; i++) {
+            secondArray[i] = firstArray[i];
+        }
+
+        // Устанавливаем последний элемент второго массива в 0
+        secondArray[secondArray.length - 1] = 0;
+
+        printArray(secondArray);
 
     }
 
     public static void task3() {
 
+        // Вызываем метод для создания и заполнения массива
+        int[] firstArray = createAndFillArray();
+
+        // Находим максимальный и минимальный элементы
+        int maxIndex = 0;
+        int minIndex = 0;
+
+        for (int i = 1; i < firstArray.length; i++) {
+            if (firstArray[i] > firstArray[maxIndex]) {
+                maxIndex = i;
+            }
+            if (firstArray[i] < firstArray[minIndex]) {
+                minIndex = i;
+            }
+        }
+
+        // Заменяем максимальный и минимальный элементы
+        firstArray[maxIndex] = 1000;
+        firstArray[minIndex] = -1000;
+
+        printArray(firstArray);
     }
 
     public static void task4() {
