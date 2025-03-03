@@ -19,10 +19,7 @@ public class Functional_4 {
         }
 
         System.out.println("Полученный массив после замены:");
-        // Выводим получившийся массив с помощью цикла foreach
-        for (int element : myArray) {
-            System.out.print(element + " ");
-        }
+        printArray(myArray);
     }
 
     public static void task2() {
@@ -70,7 +67,20 @@ public class Functional_4 {
 
     public static void task4() {
 
+        int[] myArray = createAndFillArray();
 
+        for(int i = 0; i < myArray.length - 1; i++) {
+            for(int j = 0; j < myArray.length - i - 1; j++) {
+                if(myArray[j] > myArray[j + 1]) {
+                    // Меняем элементы местами
+                    int temp = myArray[j];
+                    myArray[j] = myArray[j + 1];
+                    myArray[j + 1] = temp;
+                }
+            }
+        }
+
+        printArray(myArray);
     }
 
     // Метод для создания и заполнения массива
